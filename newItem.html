@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/main.css"/>
+	<title>Информация о товаре</title>
+</head>
+<body>
+	<div class="card mt-5 ml-5 bg-success text-black col-sm-4">
+		<form class="font-weight-bold" id="form">
+			<div class="form-group mt-2">
+				<label for="itemId">Номер товара, #</label>
+				<input type="number" class="form-control" id="itemId">
+			</div>
+			<div class="form-group">
+				<label for="itemPrice">Стоимость товара, ZL</label>
+				<input type="number" class="form-control" id="itemPrice">
+			</div>
+			<div class="form-group">
+				<label for="itemCount">Количество штук</label>
+				<input type="number" class="form-control" id="itemCount" value="1">
+			</div>
+			<div class="form-group mt-2">
+				<label for="deliveryAmount">Доставка, ZL</label>
+				<input type="number" class="form-control" id="deliveryAmount">
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="hasVatt" checked>
+				<label class="form-check-label" for="hasVatt">
+				  Ваты
+				</label>
+			</div>
+			<div class="form-group mt-2">
+				<label for="courierPrice">Перевозщик, $</label>
+				<input type="number" class="form-control" id="courierPrice">
+			</div>
+			<div class="form-group mt-2">
+				<label for="overprice">Наценка, $</label>
+				<input type="number" class="form-control" id="overprice">
+			</div>
+			<div class="form-group">
+				<label for="prepayment">Предоплата, %</label>
+				<input type="number" class="form-control" id="prepayment" value="25">
+			</div>
+			<div class="form-group mt-3">
+				<button onclick="addToOrder()" class="btn btn-primary mb-1 btn-block">
+					Добавить в заказ
+				</button>
+				<button onclick="goBackToIndex()" class="btn btn-primary mb-3 btn-block">
+					Вернуться к заказу
+				</button>
+			</div>
+		</form>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
