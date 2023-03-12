@@ -139,6 +139,8 @@ function sendOrder() {
 
     sendMessageToBot(pricesText);
     sendMessageToBot(kateText);
+
+    alert('Заказ отправлен');
 }
 
 function sendMessageToBot(text){
